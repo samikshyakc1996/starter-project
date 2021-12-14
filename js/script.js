@@ -9,10 +9,11 @@ const playlist = [
   `https://cdn.pixabay.com/audio/2021/11/13/audio_cb4f1212a9.mp3`
 ]
 let playingIndex = 0
-
-
 const song = new Audio()
+
+
 song.src = playlist[playingIndex]
+
 
 playlist.forEach(function(item, index) {
   playlistEle.innerHTML += `<li data-index="${index}">${item}</li>`
@@ -20,7 +21,6 @@ playlist.forEach(function(item, index) {
 
 
 playOrPause.addEventListener(`click`, function(event) {
-
   if (song.paused) {
     song.play()
     playOrPause.textContent = `⏸`
@@ -28,7 +28,6 @@ playOrPause.addEventListener(`click`, function(event) {
     song.pause()
     playOrPause.textContent = `▶️`
   }
-
 })
 
 playNext.addEventListener(`click`, function(event) {
