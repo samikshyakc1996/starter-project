@@ -75,7 +75,7 @@ window.addEventListener(`load`, function() {
   // If the "prev" song is clicked
   playPrev.addEventListener(`click`, function(event) {
     // If we're at the beginning of the playlist, loop to the end
-    const prevIndex = ((playingIndex - 1) < 0) ? playingIndex.length - 1 : playingIndex - 1
+    const prevIndex = ((playingIndex - 1) < 0) ? playlist.length - 1 : playingIndex - 1
   
     loadSongFromPlaylistByIndex(prevIndex)
   })
