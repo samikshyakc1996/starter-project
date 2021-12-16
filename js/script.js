@@ -1,7 +1,4 @@
-// UTILITY FUNCTIONS
-// Just a bonus, code for thought
-const $ = (selector) => document.querySelector(selector)
-const $$ = (selector) => document.querySelectorAll(selector)
+import { $ } from './utils.js'
 
 // DATA
 const playlist = [
